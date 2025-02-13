@@ -1,10 +1,10 @@
 
-# Xcode
-.DS_Store
+# Xcode y Swift Package Manager
+.build/
+.swiftpm/
+DerivedData/
 xcuserdata/
 xcshareddata/
-DerivedData/
-build/
 *.xcworkspace
 Package.resolved
 Pods/
