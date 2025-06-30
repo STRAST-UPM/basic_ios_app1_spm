@@ -255,6 +255,11 @@
 				B0754D052D5CAE4B0048CBD4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				B0754D062D5CAE750048CBD4 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				B0754D072D5CAE8B0048CBD4 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				B0C6BE4C2D9D483400EFE6AB /* XCRemoteSwiftPackageReference "GoogleUtilities" */,
+				B0C6BE4D2D9D487700EFE6AB /* XCRemoteSwiftPackageReference "gtm-session-fetcher" */,
+				B0C6BE4E2D9D491E00EFE6AB /* XCRemoteSwiftPackageReference "promises" */,
+				B04C619A2DB565AE00BD9DA7 /* XCRemoteSwiftPackageReference "nanopb" */,
+				B04C619B2DB5684300BD9DA7 /* XCRemoteSwiftPackageReference "recaptcha-enterprise-mobile-sdk" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B08A1BC62D560F5900F8BBB8 /* Products */;
@@ -454,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"basic_app/Preview Content\"";
@@ -466,6 +472,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,6 +480,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.basic.app1.spm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -484,6 +492,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"basic_app/Preview Content\"";
@@ -496,6 +505,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -503,6 +513,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.basic.app1.spm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -623,6 +634,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B04C619A2DB565AE00BD9DA7 /* XCRemoteSwiftPackageReference "nanopb" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nanopb/nanopb.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		B04C619B2DB5684300BD9DA7 /* XCRemoteSwiftPackageReference "recaptcha-enterprise-mobile-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GoogleCloudPlatform/recaptcha-enterprise-mobile-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 18.7.0;
+			};
+		};
 		B0754D032D5CAD400048CBD4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -661,6 +688,30 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 5.7.1;
+			};
+		};
+		B0C6BE4C2D9D483400EFE6AB /* XCRemoteSwiftPackageReference "GoogleUtilities" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleUtilities.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.2;
+			};
+		};
+		B0C6BE4D2D9D487700EFE6AB /* XCRemoteSwiftPackageReference "gtm-session-fetcher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/gtm-session-fetcher.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		B0C6BE4E2D9D491E00EFE6AB /* XCRemoteSwiftPackageReference "promises" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/promises.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
