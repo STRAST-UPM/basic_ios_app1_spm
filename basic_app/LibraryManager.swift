@@ -1,4 +1,5 @@
 import Foundation
+<<<<<<< HEAD
 import Alamofire
 import Kingfisher
 import FirebaseAuth
@@ -69,5 +70,11 @@ class LibraryManager {
     /// Detecta si el código se está ejecutando en Xcode Preview
     private var isRunningInPreview: Bool {
         return ProcessInfo.processInfo.environment["XCODE_RUNNING_FOR_PREVIEWS"] == "1"
+=======
+
+class LibraryManager {
+    func callLibraryFunction() {
+        print("Aquí se llamará a la función de la librería en el futuro.")
+>>>>>>> 80b2c3895a284073c662726e2af602eb802c8e10
     }
 }
